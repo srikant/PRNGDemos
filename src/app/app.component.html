@@ -1,0 +1,25 @@
+<div class="layout-wrapper menu-layout-static">
+<app-crud></app-crud>
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+  <!-- <p-toast [style]="{marginTop: '80px'}"></p-toast> -->
+
+<h3 class="first">Basic</h3>
+<p-splitButton label="Save" icon="pi pi-file" (onClick)="save('info')" [model]="items"></p-splitButton>
+
+<h3>Severities</h3>
+<p-splitButton label="Save" icon="pi pi-file" (onClick)="save('info')" [model]="items" styleClass="ui-button-secondary"></p-splitButton>
+<p-splitButton label="Save" icon="pi pi-file" (onClick)="save('success')" [model]="items" styleClass="ui-button-success"></p-splitButton>
+<p-splitButton label="Save" icon="pi pi-file" (onClick)="save('info')" [model]="items" styleClass="ui-button-info"></p-splitButton>
+<p-splitButton label="Save" icon="pi pi-file" (onClick)="save('warn')" [model]="items" styleClass="ui-button-warning"></p-splitButton>
+<p-splitButton label="Save" icon="pi pi-file" (onClick)="save('error')" [model]="items" styleClass="ui-button-danger"></p-splitButton>
+
+<h3>RTL</h3>
+<p-splitButton label="Save" icon="pi pi-file" (onClick)="save('info')" [model]="items" dir="rtl"></p-splitButton>
+
+
+<router-outlet></router-outlet>
+
+</div>
+</div>
